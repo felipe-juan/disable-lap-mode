@@ -3,7 +3,9 @@
 A script that permanently disables the lap detection sensor on ThinkPad laptops by patching the `thinkpad_acpi` kernel module. Uses DKMS to automatically reapply the patch after every kernel update.
 
 > ⚠️ **AI Transparency Disclosure**  
-> This entire repository — including the `disable-lapmode.sh` script, this README, and all related documentation — was created with the assistance of generative AI (large language models). While efforts have been made to ensure correctness and safety, the software has not been exhaustively tested across all hardware or distributions. **Please review the script thoroughly before executing it**, understand the modifications it performs (kernel module patching, source downloads, DKMS registration), and accept all associated risks. The author(s) assume no liability for any damage, data loss, or unexpected behaviour resulting from the use of this software.
+> This entire repository — including the `disable-lapmode.sh` script, this README, and all related documentation — was created with the assistance of generative AI (large language models). 
+> **Please review the script thoroughly before executing it**, understand the modifications it performs (kernel module patching, source downloads, DKMS registration), and accept all associated risks.
+> The author assume no liability for any damage, data loss, or unexpected behaviour resulting from the use of this software.
 
 ## Table of Contents
 - [What This Does](#what-this-does)
