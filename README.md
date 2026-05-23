@@ -1,10 +1,9 @@
-> [!WARNING] ⚠️ AI Transparency Disclosure
-> This entire repository — including the disable-lapmode.sh script, this README, and all related documentation — was created with the assistance of generative AI. 
-> Please review the script thoroughly before executing it, understand the modifications it performs (kernel module patching, source downloads, DKMS registration), and accept all associated risks. The author(s) assume no liability for any damage, data loss, or unexpected behaviour resulting from the use of this software.
-
 # Disable ThinkPad Lap Detection (disable-lapmode.sh)
 
 A script that permanently disables the lap detection sensor on ThinkPad laptops by patching the `thinkpad_acpi` kernel module. Uses DKMS to automatically reapply the patch after every kernel update.
+
+> ⚠️ **AI Transparency Disclosure**  
+> This entire repository — including the `disable-lapmode.sh` script, this README, and all related documentation — was created with the assistance of generative AI (large language models). While efforts have been made to ensure correctness and safety, the software has not been exhaustively tested across all hardware or distributions. **Please review the script thoroughly before executing it**, understand the modifications it performs (kernel module patching, source downloads, DKMS registration), and accept all associated risks. The author(s) assume no liability for any damage, data loss, or unexpected behaviour resulting from the use of this software.
 
 ## Table of Contents
 - [What This Does](#what-this-does)
@@ -42,7 +41,7 @@ After a reboot, `/sys/devices/platform/thinkpad_acpi/dytc_lapmode` will always r
 
 ### 1. Download the script
 ```bash
-curl -O https://raw.githubusercontent.com/your-repo/disable-lapmode.sh
+curl -O https://raw.githubusercontent.com/felipe-juan/disable-lap-mode/main/disable-lapmode.sh
 chmod +x disable-lapmode.sh
 ```
 
@@ -132,5 +131,3 @@ sudo rm -rf /usr/src/thinkpad_acpi-1.0
 sudo dkms status   # Should show no thinkpad_acpi entries
 sudo reboot
 ```
-
-*Tested on Fedora 44, Ubuntu 22.04, and Arch Linux. Feedback and improvements welcome!*
