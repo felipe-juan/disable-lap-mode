@@ -1,5 +1,5 @@
 > [!WARNING] ⚠️ AI Transparency Disclosure
-> This entire repository — including the disable-lapmode.sh script, this README, and all related documentation — was created with the assistance of generative AI. While efforts have been made to ensure correctness and safety, the software has not been exhaustively tested across all hardware or distributions. 
+> This entire repository — including the disable-lapmode.sh script, this README, and all related documentation — was created with the assistance of generative AI. 
 > Please review the script thoroughly before executing it, understand the modifications it performs (kernel module patching, source downloads, DKMS registration), and accept all associated risks. The author(s) assume no liability for any damage, data loss, or unexpected behaviour resulting from the use of this software.
 
 # Disable ThinkPad Lap Detection (disable-lapmode.sh)
